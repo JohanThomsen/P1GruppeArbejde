@@ -1,0 +1,118 @@
+#include <stdio.h>
+#include <math.h>
+
+int a = 5,
+    b = 6;
+
+int sum_of_squares(void)
+{
+    return a * a + b * b;
+}
+
+int sum_of_squares(int a, int b)
+{
+    return a * a + b * b;
+}
+
+void print_sum_of_squares(void)
+{
+    printf("Result %d\n", sum_of_squares);
+}
+
+int main(void)
+{
+    printf("Result %d\n", sum_of_squares());
+    print_sum_of_squares()
+
+    return 0;
+}
+
+
+
+void subproblem1(void);
+void subproblem2(void);
+void subproblem3(void);
+void subproblem11(void);
+void subproblem12(void);
+void subproblem31(void);
+
+int main(void) // Main problem
+{
+    subproblem1();
+
+    subproblem2();
+    
+    subproblem3();
+    
+    return 0;
+}
+
+void subproblem1(void)
+{
+    subproblem11();
+    subproblem12();
+}
+
+void subproblem2(void);
+{
+    /*code*/
+}
+
+void subproblem3(void);
+{
+    subproblem31();
+}
+
+void subproblem11();
+{
+    /*code*/ 
+}
+
+void subproblem12();
+{
+    /*code*/ 
+}
+
+void subproblem31();
+{
+    /*code*/ 
+}
+// Vi kan langt bedre lige lokale variable, end globale ariable.
+
+
+
+
+
+void my_function(int a, double b)  // Den lokale variable fungerer kun imens funktionen er kørt, så der bliver laver en midlertidlig kopi af den aktuelle parameter inde i funktionen.
+{
+    double c = a + b;
+}
+
+int a = 3
+double d = 4.567
+
+my_function(1, 2.345);
+my_function(a + 3, d + 3.0)
+
+
+
+void funktion(void)
+{
+    //Procedure, der ikke retunrerer noget. Den gør noget uden en parameter0
+}
+
+double funktion(void)
+{
+    //Funtion med en returværdi, der skal returnere en double
+
+    return 2.3345;
+}
+
+double funktion(int i)
+{
+    //En funkttion der skal returnere en double, og tager imod en parameter, der skal være en INT, denne variabel bliver så kaldt i  KUN inden i funktionen.
+
+    return i;
+}
+
+

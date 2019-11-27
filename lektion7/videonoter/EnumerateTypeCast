@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	enum days{sunday, monday, tuesday, wednesday, thursday, friday, saturday}; // sunday = 0, monday = 1, Tuesday = 2,
+	return 0;
+}
+
+enum days next_day_of(enum days d)
+{
+    return (enum days) (((int)d + 1^) % 7)
+}
